@@ -1,0 +1,10 @@
+
+Curls to test peoplesoft connection:
+
+curl -X POST http://localhost:3000/peoplesoft/login \
+  -H "Content-Type: application/json" \
+  -d '{"username":"psadmin","password":"changeme"}'
+
+
+curl http://localhost:3000/peoplesoft/employees/12345 \
+  -H "Authorization: Bearer ps-mock-token-1764259142651"
