@@ -4,7 +4,7 @@
 # LegacyBridge – ERP Modernization Middleware
 
 LegacyBridge is a lightweight Node.js/TypeScript middleware designed to sit between
-**legacy ERP systems (e.g., PeopleSoft)** and **modern applications**.  
+legacy ERP systems (e.g., PeopleSoft) and modern applications.  
 It provides a clean, modern API surface while isolating downstream systems behind an
 adapter layer. This enables gradual modernization without replacing existing ERP
 systems.
@@ -22,10 +22,6 @@ systems.
 
 This version is intentionally minimal, serving as the foundation for a more robust
 middleware service.
-
----
-
-## 🏗️ Architecture Overview
 
 ```
 
@@ -45,7 +41,7 @@ Legacy ERP (future real system)
 
 ```
 
-### Why an Adapter?
+Why an Adapter?
 
 The adapter layer provides:
 
@@ -57,32 +53,7 @@ The adapter layer provides:
 
 ---
 
-## 📁 Project Structure
-
-```
-
-backend/
-├─ src/
-│   ├─ adapters/
-│   │    └─ peoplesoftAdapter.ts
-│   ├─ routes/
-│   │    └─ peoplesoft.ts
-│   ├─ utils/
-│   │    └─ logger.ts
-│   ├─ config/
-│   │    └─ index.ts
-│   └─ server.ts
-├─ .env
-├─ .env.example
-├─ package.json
-├─ tsconfig.json
-└─ README.md
-
-````
-
----
-
-## ⚙️ Configuration
+⚙️ Configuration
 
 Configuration is stored in `.env` (not committed) and loaded via `config/index.ts`.
 
@@ -185,6 +156,3 @@ Perfect for portfolios, demos, or real modernization initiatives.
 ## 📝 License
 
 MIT (change as needed)
-
-
-
